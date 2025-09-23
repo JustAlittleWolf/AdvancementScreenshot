@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "advancementscreenshot",
+  "version": "${version}",
+  "name": "AdvancementScreenshot",
+  "description": "Takes a screenshot when achieving an advancement",
+  "authors": [
+    "JustAlittleWolf"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/advancementscreenshot/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.wolfii.advancementscreenshot.client.AdvancementScreenshotClient"
+    ]
+  },
+  "mixins": [
+    "advancementscreenshot.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.0",
+    "fabric": "*",
+    "minecraft": "~${minecraft_version}"
+  }
+}
