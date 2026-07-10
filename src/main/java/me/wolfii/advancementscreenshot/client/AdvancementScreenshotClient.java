@@ -11,7 +11,7 @@ public class AdvancementScreenshotClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        ClientTickEvents.END_CLIENT_TICK.register((client) -> screenshotCooldown.getAndUpdate(it -> Math.max(it - 1, 0)));
+        ClientTickEvents.END_CLIENT_TICK.register((_) -> screenshotCooldown.getAndUpdate(it -> Math.max(it - 1, 0)));
     }
 
     public static boolean tryTakeScreenshot() {
